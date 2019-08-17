@@ -22,82 +22,54 @@
 
     </head>
 
-    <body class="container-fluid">
+    <body >
+	<section id="base">
+		<div class="container-fluid">
+				
+				<div class="row">
+				    <ul class="col nav justify-content-end border">
+					<li class="nav-item"><a class="nav-link" href="#">
+					Регистрация</a></li>
+					<li class="nav-item dropdown">
+					    <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+					    href="#" role="button" aria-haspopup="true"
+					    aria-expanded="false">Профиль</a>
+					    <div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Мои объявления</a>
+						<a class="dropdown-item" href="#">
+						Изменить личные данные</a>
+						<a class="dropdown-item" href="#">
+						Изменить пароль</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Выйти</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#">Удалить</a>
+					    </div>
+					</li>
+					<li class="nav-item"><a class="nav-link" href="#">Вход</a></li>
+				    </ul>
+				</div>
+				
+				<div class="row">
+					<header class="col-md-12">
+				    		<h6 class="text-center">Расписание дежурств</h6>
+					</header>
+				</div>
 
-        <header class="mb-0">
-<!--
-            <h6 class="text-center">Расписание дежурств</h6>
--->
-        </header>
+			      <div class="row">
+				{% bootstrap_messages %}
+				{% block content %}
+				{% endblock %}
+			      </div>
 
-        <div class="row">
+	</div>	
+	</section>
+	
+		<footer>
+            			<p class="text-right font-italic">&copy;Подберезский П. В., 2019 г.</p>
 
-            <ul class="col nav justify-content-end border">
+                </footer>
 
-                <li class="nav-item"><a class="nav-link" href="#">
-
-                Регистрация</a></li>
-
-
-                <li class="nav-item dropdown">
-
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown"
-
-                    href="#" role="button" aria-haspopup="true"
-
-                    aria-expanded="false">Профиль</a>
-
-                    <div class="dropdown-menu">
-
-                        <a class="dropdown-item" href="#">Мои объявления</a>
-
-                        <a class="dropdown-item" href="#">
-
-                        Изменить личные данные</a>
-
-                        <a class="dropdown-item" href="#">
-
-                        Изменить пароль</a>
-
-                        <div class="dropdown-divider"></div>
-
-                        <a class="dropdown-item" href="#">Выйти</a>
-
-                        <div class="dropdown-divider"></div>
-
-                        <a class="dropdown-item" href="#">Удалить</a>
-
-                    </div>
-
-                </li>
-
-
-                <li class="nav-item"><a class="nav-link" href="#">Вход</a></li>
-
-
-            </ul>
-
-        </div>
-
-	<div class="row">
-
-
-                {% bootstrap_messages %}
-
-                {% block content %}
-
-                {% endblock %}
-
-
-	</div>
-
-<!--<footer class="mt-auto">
-
-            <p class="text-right font-italic">&copy; читатели, 2018 г.</p>
-
-        </footer>
-
---.
 
 </body>
 
